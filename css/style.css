@@ -48,3 +48,47 @@ body{
     margin: 0 auto;
 }
 
+/* Inicio header */
+
+header .nav_top {
+    background-color: var(--colorSecundario);
+    padding: var(--marginGrid);
+}
+
+header .nav_top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav_top a {
+    text-decoration: none;
+}
+
+header .nav_top a i{
+    color: var(--colorPrincipal);
+    font-size: 140%;
+}
+
+header .nav_top a span {
+    color: white;
+    display: none;
+}
+
+/* Final header */
+
+
+
+/* Media queries */
+
+/* breakpoint 768px - tablet */
+@media(min-width: 48em) {
+    
+header .nav_top a span {
+    display: inline;
+    }
+
+header .nav_top .container {
+    justify-content: space-between;
+    }
+
+}
