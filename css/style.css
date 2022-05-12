@@ -30,13 +30,10 @@ img {
     height: auto;
 }
 
-/* Generamos scroll animado. */
-
 html {
     scroll-behavior: smooth;
 }
 
-/* __________________________ */
 
 body{
     font-family: var(--fuentePrincipal);
@@ -61,6 +58,7 @@ header .nav_top .container {
 }
 
 header .nav_top a {
+    /* color: var(--colorPrincipal); */
     text-decoration: none;
 }
 
@@ -74,8 +72,52 @@ header .nav_top a span {
     display: none;
 }
 
-/* Final header */
+header nav {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
 
+
+header nav .logo {
+    float: left;
+    max-width: 100px;
+}
+
+header nav .hamburguesa {
+    float:right;
+    width: 1.5em;
+}
+
+header nav .hamburguesa>div {
+    border-bottom: 2px solid grey;
+    width: 100%;
+    margin-bottom: 0.5em; /* 7px */
+}
+
+header nav .menu a{
+    display:block;
+    padding: 10px 0 16px 0;
+    clear: left;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+
+}
+
+header nav .menu .activo {
+    color: var(--colorPrincipal);
+}
+
+header nav .menu li:last-child a{
+    border: none;
+}
+
+/* Final header */
+ 
+/* Inicio Hero */
+
+/* Final hero */
 
 
 /* Media queries */
