@@ -1,0 +1,21 @@
+/* Reset de Eric Meyer*/
+@import url(reset.css); 
+
+/* Montserrat 400 y 700 - Handlee  */
+    /* font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/* Font Awesome 6.1 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+/* Esto es para las hacer imgs responsives. */
+img { 
+    width: 100%;
+    display: block;
+    height: auto;
+}
