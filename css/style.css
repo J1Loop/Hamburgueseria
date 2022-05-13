@@ -84,7 +84,7 @@ header nav .logo {
 }
 
 header nav .hamburguesa {
-    float:right;
+    float: right;
     width: 1.5em;
 }
 
@@ -95,8 +95,8 @@ header nav .hamburguesa>div {
 }
 
 header nav .menu a{
-    display:block;
-    padding: 10px 0 16px 0;
+    display: block;
+    padding: var(--marginGrid);
     clear: left;
     border-bottom: 1px solid grey;
     text-decoration: none;
@@ -105,7 +105,8 @@ header nav .menu a{
 
 }
 
-header nav .menu .activo {
+header nav .menu .activo,
+header nav .menu a:hover {
     color: var(--colorPrincipal);
 }
 
@@ -119,10 +120,14 @@ header nav .menu li:last-child a{
 
 /* Final hero */
 
+/* Inicio footer */
+
+/* Final footer */
+
 
 /* Media queries */
 
-/* breakpoint 768px - tablet */
+/* breakpoint 768px - tablet S*/
 @media(min-width: 48em) {
     
 header .nav_top a span {
@@ -131,6 +136,30 @@ header .nav_top a span {
 
 header .nav_top .container {
     justify-content: space-between;
+    }
+
+}
+
+/* breakpoint 1004px - tablet L */
+
+@media (min-width: 62.750em) {
+    header nav .hamburguesa{
+        display: none;
+    }
+
+    header nav .menu {
+        float: right;
+        padding-top: 0;
+        clear: none;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header nav .menu a{
+        border: 0px;
+        padding: 0.4em 0em 0.4em 2.5em;
     }
 
 }
