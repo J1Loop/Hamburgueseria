@@ -1,0 +1,200 @@
+/* Reset de Eric Meyer*/
+@import url(reset.css); 
+
+/* Montserrat 400 y 700 - Handlee  */
+    /* font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/* Font Awesome 6.1 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    --fuenteSecundaria: 'Handlee', cursive;
+    --colorPrincipal: #fa573a;
+    --colorSecundario: #21242e;
+    --fontSize: 1em;
+    --anchoMax: 1100px;
+    --marginGrid: 1em;
+}
+
+/* Esto es para las hacer imgs responsives. */
+img { 
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: var(--fontSize);
+}
+
+.container {
+    max-width: var(--anchoMax);
+    margin: 0 auto;
+}
+
+/* Inicio header */
+
+header .nav_top {
+    background-color: var(--colorSecundario);
+    padding: var(--marginGrid);
+}
+
+header .nav_top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav_top a {
+    /* color: var(--colorPrincipal); */
+    text-decoration: none;
+}
+
+header .nav_top a i{
+    color: var(--colorPrincipal);
+    font-size: 140%;
+}
+
+header .nav_top a span {
+    color: white;
+    display: none;
+}
+
+header nav {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+
+header nav .logo {
+    float: left;
+    max-width: 100px;
+}
+
+header nav .hamburguesa {
+    float: right;
+    width: 1.5em;
+}
+
+header nav .hamburguesa>div {
+    border-bottom: 2px solid grey;
+    width: 100%;
+    margin-bottom: 0.5em; /* 7px */
+}
+
+header nav .menu a{
+    display: block;
+    padding: var(--marginGrid);
+    clear: left;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+
+}
+
+header nav .menu .activo,
+header nav .menu a:hover {
+    color: var(--colorPrincipal);
+}
+
+header nav .menu li:last-child a{
+    border: none;
+}
+
+header nav:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* Final header */
+ 
+/* Inicio Hero */
+
+/* Final hero */
+
+/* Inicio footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--colorSecundario);
+        color: white;
+        padding: var(--marginGrid);
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: var(--colorPrincipal);
+    }
+
+    .arriba {
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+        font-size: 2em;
+    }
+
+    .arriba a{
+        color: var(--colorPrincipal);
+    }
+
+
+/* Final footer */
+
+/* Media queries */
+
+/* breakpoint 768px - tablet S*/
+@media(min-width: 48em) {
+    
+header .nav_top a span {
+    display: inline;
+    }
+
+header .nav_top .container {
+    justify-content: space-between;
+    }
+
+}
+
+/* breakpoint 1004px - tablet L */
+
+@media (min-width: 62.750em) {
+    header nav .hamburguesa{
+        display: none;
+    }
+
+    header nav .menu {
+        float: right;
+        padding-top: 0;
+        clear: none;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header nav .menu a{
+        border: 0px;
+        padding: 0.4em 0em 0.4em 2.5em;
+    }
+
+}
