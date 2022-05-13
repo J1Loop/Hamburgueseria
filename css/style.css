@@ -266,7 +266,7 @@ section p {
 
 #ourservices article>div i {
     border: 1px solid var(--colorPrincipal);
-    padding: 2px;
+    padding: 0.5em;
     color: var(--colorPrincipal);
     font-size: 150%;
 }
@@ -335,7 +335,7 @@ header .nav_top .container {
 
 section article {
     border-bottom: 0px solid #aaa;
-    padding: calc(var(--marginGrid)*2) 0;
+    padding: calc(var(--marginGrid)*2);
     border-left: 1px solid #aaa;
 }
 
