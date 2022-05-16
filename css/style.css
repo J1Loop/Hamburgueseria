@@ -287,7 +287,6 @@ section h4 {
 
 section .flex {
     padding: 0 var(--marginGrid);
-
 }
 
 #aboutus figure {
@@ -311,6 +310,10 @@ section .flex {
 
 }
 
+#aboutus .flex {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Final aboutus */
@@ -372,10 +375,21 @@ header .nav_top .container {
     }
 
 section article {
-    border-bottom: 0px solid #aaa;
+    border-bottom: 0px;
     padding: calc(var(--marginGrid)*2);
     border-left: 1px solid #aaa;
 }
+
+#aboutus .flex {
+    flex-direction: row;
+    padding-top: var(--marginGrid);
+}
+
+#aboutus figure {
+    width: 90%;
+    margin: .5em auto;
+}
+
 
 }
 
