@@ -402,29 +402,50 @@ section .flex{
 /* fin our blogs*/
 
 /* inicio today's menu*/
-.menu-bg-color {
-    background-color: var(--colorSecundario);
-}
-
-#todaysmenu h2{
-    color: white;
-}
-
-#todaysmenu .grid {
+.menu-bg-color .grid {
     display: grid;
     gap: var(--marginGrid);
     padding: 0 var(--marginGrid);
-    grid-template-columns: repeat(1, 1fr);
+    
 }
 
-#todaysmenu>div.container {
-    margin: var(--marginGrid);
+
+.menu-bg-color {
+    background-color: var(--colorSecundario);
+    padding-top: var(--marginGrid);
+    padding-bottom: 5em;
+}
+
+.menu-bg-color section {
+    margin: 0 var(--marginGrid);
+    padding: 0 var(--marginGrid);
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
+}
+
+.menu-bg-color section article {
+    border: none;
+    padding: var(--marginGrid) 0;
+}
+
+#todaysmenu2 h2{
+    color: white;
+}
+
+#todaysmenu2>div.container {
+margin: var(--marginGrid) auto;
+padding: var(--marginGrid);
 }
     
 #todaysmenu aside nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 3em;
+}
+
+#todaysmenu aside .container {
+    margin: var(--marginGrid);
 }
 
 #todaysmenu aside .container .menu {
@@ -451,6 +472,52 @@ section .flex{
     border-radius: 0.285em;
 }
 
+#todaysmenu aside :is(h3,p) {
+    /* color: white; */
+    line-height: 1.6;
+}
+
+#todaysmenu aside h3 {
+    color: white;
+}
+
+#todaysmenu aside p {
+    color: lightgray;
+}
+
+#todaysmenu aside hr {
+    width: 55px;
+    margin-left: 0;
+    border-color: var(--colorPrincipal);
+    }
+
+/*inicio sub hot offers*/
+#hotoffers article {
+    display: grid;
+}
+
+#hotoffers article :is(h3,p) {
+    /* color: white; */
+    line-height: 1.6;
+}
+
+#hotoffers  p {
+    color: lightgray;
+}
+
+#hotoffers article h3 {
+    color: white;
+}
+
+
+#hotoffers article h3>span {
+    color: var(--colorPrincipal);
+    /* margin-left: 13em; chino chapuceiro*/
+    float: right;
+    margin-right: var(--marginGrid);
+}
+
+/*fin sub hot offers*/
 
 /* fin today's menu*/
 
@@ -524,8 +591,22 @@ section .flex{
         grid-column: 3/4;
     }
     #ourblogs .grid {
-    grid-template-columns: repeat(3, 1fr);
-}
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu-bg-color>div.grid {
+        grid-template-columns: 25% 75%;
+    }
+    #hotoffers>div.grid {
+        grid-template-rows: repeat(3,1fr);
+    }
+    #hotoffers article {
+        grid-template-columns: 30% 70%;
+        gap: 2em;
+    }
+    #todaysmenu aside .grid {
+        gap: 7em;
+    }
+    
 
     /* pagina interesante de css grid 
     https://css-tricks.com/snippets/css/complete-guide-grid/ */
