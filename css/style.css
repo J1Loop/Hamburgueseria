@@ -399,10 +399,18 @@ section .flex{
     font-weight: 700;  
     
 }
-
-
 /* fin our blogs*/
 
+/* inicio today's menu*/
+    /* #todaysmenu {
+        background-color: var(--colorSecundario);
+    } */
+
+    
+
+
+
+/* fin today's menu*/
 
 /* mediaqueries */
 
