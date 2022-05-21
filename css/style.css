@@ -12,13 +12,13 @@ font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
     display: block;
     height: auto;
 }
 
-html{
+html {
     /* para generar un scroll animado con ancla */
     scroll-behavior: smooth;
 }
@@ -33,12 +33,12 @@ html{
     --marginGrid: 1em;
 }
 
-body{
+body {
     font-family: var(--fuentePrincipal);
     font-size: var(--fontSize);
 }
 
-.container{
+.container {
     max-width: var(--anchoMaximo);
     margin: 0 auto;
 }
@@ -402,12 +402,54 @@ section .flex{
 /* fin our blogs*/
 
 /* inicio today's menu*/
-    /* #todaysmenu {
-        background-color: var(--colorSecundario);
-    } */
+.menu-bg-color {
+    background-color: var(--colorSecundario);
+}
 
+#todaysmenu h2{
+    color: white;
+}
+
+#todaysmenu .grid {
+    display: grid;
+    gap: var(--marginGrid);
+    padding: 0 var(--marginGrid);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#todaysmenu>div.container {
+    margin: var(--marginGrid);
+}
     
+#todaysmenu aside nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+#todaysmenu aside .container .menu {
+    width: 100%;
+}
+
+#todaysmenu nav .menu a{
+    display: block;
+    text-decoration: none;
+    padding: var(--marginGrid);
+    color: white;
+}
+
+#todaysmenu .menu li a:hover{
+    color: var(--colorPrincipal);
+}
+
+#todaysmenu .menu li:first-child a:hover{
+    color: white;
+}
+
+#todaysmenu .menu .activo {
+    background-color: var(--colorPrincipal);
+    border-radius: 0.285em;
+}
 
 
 /* fin today's menu*/
